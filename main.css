@@ -1,3 +1,19 @@
-header {
-  display: flex;
+/* black = #1b262c
+dark blue = #0f4c75
+sky blue = #3282b8
+light blue = #bbe1fa */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10/16*100 i.e. 10px is default size */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  --dark-black-bg: #1b262c;
+  --dark-blue-color: #0f4c75;
+  --dark-sky-blue: #3282b8;
+  --dark-light-blue: #bbe1fa;
 }
