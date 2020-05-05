@@ -1,15 +1,11 @@
-/* black = #1b262c
-dark blue = #0f4c75
-sky blue = #3282b8
-light blue = #bbe1fa */
-html {
-  box-sizing: border-box;
-  font-size: 62.5%; /* 10/16*100 i.e. 10px is default size */
-}
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10/16*100 i.e. 10px is default size */
 }
 :root {
   --background: #0e0d45;
@@ -23,9 +19,17 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   transition: background 0.2s linear;
+  color: var(--text);
+}
+h1,
+h2 {
+  margin: 0;
 }
 header {
   background: var(--text);
+  height: 8vh;
+  display: flex;
+  align-items: center;
 }
 .container {
   width: 90%;
@@ -39,9 +43,6 @@ header {
   color: var(--background);
   padding: 1rem;
   font-size: larger;
-}
-.header__icon {
-  font-size: 2rem;
 }
 .checkbox {
   opacity: 0;
@@ -88,4 +89,81 @@ header {
 .light-theme {
   --background: #acaaf5;
   --text: #0e0d45;
+}
+main {
+  height: 86vh;
+}
+
+.search__query {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.search__query--input {
+  padding: 1.2rem;
+  border-radius: 0 2rem 0 2rem;
+  width: 80%;
+  max-width: 30rem;
+  border: none;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.searched__response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+  height: 80%;
+}
+.fa-map-marker-alt {
+  font-size: 2.2rem;
+}
+.icon__box {
+  margin-right: 1rem;
+  align-self: center;
+}
+.searched__response--location {
+  font-size: 2rem;
+  display: flex;
+  align-items: baseline;
+}
+.date__now {
+  font-size: 1.4rem;
+}
+.searched__temp {
+  font-size: 10rem;
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+.weather__icon {
+  font-size: 10rem;
+}
+.searched__weather--type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.searched__weather--type p {
+  font-size: 2rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 1.5rem;
+  height: 6vh;
+  color: #6e6aae;
+}
+footer a {
+  text-decoration: none;
+  color: #302ae6;
+  cursor: pointer;
 }

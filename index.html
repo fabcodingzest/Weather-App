@@ -16,23 +16,57 @@
   </head>
   <body>
     <header>
-      <header>
-        <div class="container header">
-          <div class="header__icon">
+      <div class="container header">
+        <div class="header__icon">
+          <h1>
             <i class="fas fa-temperature-high"></i> <strong>Breeze</strong>
-          </div>
-          <div>
-            <input type="checkbox" class="checkbox" id="chk" />
-            <label class="label" for="chk">
-              <i class="fas fa-sun"></i>
-              <i class="fas fa-moon"></i>
-              <div class="ball"></div>
-            </label>
-          </div>
+          </h1>
         </div>
-      </header>
+        <div>
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
     </header>
-
+    <main>
+      <section class="search__query">
+        <input
+          class="search__query--input"
+          type="text"
+          placeholder="Search for a city..."
+        />
+      </section>
+      <section class="searched__response">
+        <div class="searched__response--location">
+          <div class="icon__box"><i class="fas fa-map-marker-alt"></i></div>
+          <h2>Delhi, India</h2>
+        </div>
+        <div class="date__now">
+          <p>
+            Tuesday 5th May, 2020
+          </p>
+        </div>
+        <div class="searched__temp"><span>33</span>°C</div>
+        <div class="searched__weather--type">
+          <div class="weather__icon">
+            <i class="fas fa-cloud-sun-rain"></i>
+          </div>
+          <p>Cloudy and Rainy</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Made with ♥ by
+        <a target="_blank" href="https://www.instagram.com/fabcodingzest/"
+          >Fab</a
+        >
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
