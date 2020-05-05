@@ -3,15 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8319106e42.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.css" />
     <title>Weather App</title>
   </head>
   <body>
     <header>
-      <input type="text" />
-      <div class="mode">
-        <span class="text">Mode:</span>
-      </div>
+      <header>
+        <div class="container header">
+          <div class="header__icon">
+            <i class="fas fa-temperature-high"></i> <strong>Breeze</strong>
+          </div>
+          <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+        </div>
+      </header>
     </header>
 
     <script src="script.js"></script>
