@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fabcodingzest/Weather-App/issues"
   },
-  "homepage": "https://github.com/fabcodingzest/Weather-App#readme"
+  "homepage": "https://github.com/fabcodingzest/Weather-App#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }

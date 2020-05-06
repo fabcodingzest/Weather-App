@@ -74,7 +74,6 @@ header {
   transform: translateX(0);
   transition: transform 0.2s linear;
 }
-
 .checkbox:checked + .label .ball {
   transform: translateX(24px);
 }
@@ -98,9 +97,17 @@ main {
   align-items: center;
 }
 form {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.fa-search-location {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  font-size: 2.4rem;
 }
 .search__query {
   padding: 3rem;
@@ -109,13 +116,10 @@ form {
   justify-content: center;
   align-items: flex-start;
 }
-input[type='text'] {
-  font-family: 'Font Awesome 5 Free', Roboto;
-  font-size: 1.8rem;
-  font-weight: 900;
-}
+
 .search__query--input {
   padding: 1.2rem;
+  padding-left: 4rem;
   border-radius: 0 2rem 0 2rem;
   width: 100%;
   max-width: 45rem;
