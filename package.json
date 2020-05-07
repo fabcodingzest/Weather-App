@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/fabcodingzest/Weather-App#readme",
   "dependencies": {
-    "dotenv-webpack": "^1.7.0"
+    "dotenv-webpack": "^1.7.0",
+    "open-weather-icons": "0.0.8"
   },
   "devDependencies": {
     "browserify": "^16.5.1",
