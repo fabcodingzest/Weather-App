@@ -11,7 +11,11 @@ module.exports = merge(common, {
   entry: "./src/index.js",
   output: {
     filename: "main.[contentHash].js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "build"),
+    publicPath: '/',
+  },
+  devServer: {
+    contentBase: './build'
   },
   optimization: {
     minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()]

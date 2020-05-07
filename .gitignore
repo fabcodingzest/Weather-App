@@ -10,7 +10,6 @@ dist
 /coverage
 
 # production
-/build
 
 # misc
 .env
