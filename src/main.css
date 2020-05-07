@@ -10,7 +10,7 @@ html {
 :root {
   --background: #0e0d45;
   --text: #acaaf5;
-  --background-opacity: rgb(48, 42, 230, 0.3);
+  --background-opacity: rgb(48, 42, 230, 0.1);
 }
 
 body {
@@ -82,7 +82,7 @@ header {
   color: #f1c40f;
 }
 
-.fa-sun {
+.switch-sun {
   color: #1d198a;
 }
 
