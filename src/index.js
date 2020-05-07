@@ -1,12 +1,18 @@
 import './main.css';
 const chk = document.getElementById('chk');
 const searchInput = document.querySelector('.search__query--input');
-const location = document.querySelector('.searched__response--head');
 const searchedRes = document.querySelector('.searched__response');
-const temp = document.querySelector('.searched__temp--res');
-const weatherType = document.querySelector('.weather__type')
-const dateToday = document.querySelector('.date__now--text');
-
+const iconData = {
+  '01d' : { icon: '<i class="fas fa-sun"></i>'},
+  '02d' : { icon: '<i class="fas fa-cloud-sun"></i>'},
+  '03d' : { icon: '<i class="fas fa-cloud"></i>'},
+  '04d' : { icon: '<i class="fas fa-cloud-meatball"></i>'},
+  '09d' : { icon: '<i class="fas fa-cloud-showers-heavy"></i>'},
+  '10d' : { icon: '<i class="fas fa-cloud-sun-rain"></i>'},
+  '11d' : { icon: '<i class="fas fa-bolt"></i>'},
+  '13d' : { icon: '<i class="far fa-snowflake"></i>'},
+  '50d' : { icon: '<i class="fas fa-smog"></i>'},
+}
 const api_key = process.env.API_KEY;
 const api = {
   key: api_key,
@@ -58,9 +64,9 @@ function displayResults (weather) {
         </div>
         <div class="searched__weather--type">
           <div class="weather__icon">
-            <i class="fas fa-cloud-sun-rain"></i>
+            ${iconData[`${weather.weather[0].icon}`].icon}
           </div>
-          <p class="weather__type">${weather.weather[ 0 ].main}</p>
+          <p class="weather__type">${weather.weather[0].main}</p>
         </div>
   `
   searchedRes.innerHTML = dataRes;
