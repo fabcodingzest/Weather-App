@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8319106e42.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+      SameSite="None"
+    />
+    <!-- <link rel="stylesheet" href="/src/main.css" /> -->
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <div class="header__icon">
+          <h1>
+            <i class="fas fa-temperature-high"></i> <strong>Breeze</strong>
+          </h1>
+        </div>
+        <div>
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="search__query">
+        <form name="search">
+          <i class="fas fa-search-location"></i>
+          <input
+            class="search__query--input"
+            type="text"
+            placeholder="Search for a city..."
+          />
+        </form>
+      </section>
+      <section class="searched__response">
+        <div class="searched__response--location">
+          <div class="icon__box"><i class="fas fa-map-marker-alt"></i></div>
+          <h2>Delhi, India</h2>
+        </div>
+        <div class="date__now">
+          <p>
+            Tuesday 5th May, 2020
+          </p>
+        </div>
+        <div class="searched__temp"><span>33</span>°C</div>
+        <div class="searched__weather--type">
+          <div class="weather__icon">
+            <i class="fas fa-cloud-sun-rain"></i>
+          </div>
+          <p>Cloudy and Rainy</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Made with ♥ by
+        <a
+          class="mon"
+          target="_blank"
+          href="https://www.instagram.com/fabcodingzest/"
+          >Fab</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
