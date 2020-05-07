@@ -56,7 +56,6 @@ function datebuilder (d) {
 }
 
 function displayResults (weather) {
-  console.log(weather);
   let now = new Date();
   const dataRes = `
   <div class="searched__response--location">
