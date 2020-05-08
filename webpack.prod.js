@@ -10,7 +10,7 @@ module.exports = merge(common, {
   mode:"production",
   entry: "./src/index.js",
   output: {
-    filename: "main.[contentHash].js",
+    filename: "main.js",
     path: path.resolve(__dirname, "build"),
     publicPath: '/',
   },
@@ -20,7 +20,7 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()]
   },
-  plugins: [ new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }), new CleanWebpackPlugin() ],
+  plugins: [ new MiniCssExtractPlugin({ filename: "[name].css" }), new CleanWebpackPlugin() ],
   module: {
     rules: [
       {
