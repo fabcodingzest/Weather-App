@@ -16,6 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
       rel="stylesheet"
       SameSite="None"
+      rel="preconnect"
+      async
+      disabled
     />
     <!-- <link rel="stylesheet" href="/src/main.css" /> -->
     <title>Weather App</title>
@@ -42,14 +45,14 @@
       <section class="search__query">
         <form name="search">
           <i class="fas fa-search-location"></i>
-          <label for="search__input">
-            <input
-              class="search__query--input"
-              type="text"
-              id="search__input"
-              name="search__input"
-              placeholder="Search for a city..."
-          /></label>
+          <label for="search__input--box"></label>
+          <input
+            class="search__query--input"
+            type="text"
+            id="search__input--box"
+            name="search__input--box"
+            placeholder="Search for a city..."
+          />
         </form>
       </section>
       <section class="searched__response">
