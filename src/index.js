@@ -25,7 +25,7 @@ const iconData = {
 const api_key = process.env.API_KEY;
 const api = {
   key: api_key,
-  baseUrl: "https:/api.openweathermap.org/data/2.5/"
+  baseUrl: "api.openweathermap.org/data/2.5/"
 }
 function CheckError (response) {
   if (response.status >= 200 && response.status <= 299) {
