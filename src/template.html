@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />  <meta name="description" content="A simple Weather App made with Vanilla JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/8319106e42.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
@@ -37,9 +38,12 @@
       <section class="search__query">
         <form name="search">
           <i class="fas fa-search-location"></i>
+          <label for="search__input"></label>
           <input
             class="search__query--input"
             type="text"
+            id="search__input"
+            name="search__input"
             placeholder="Search for a city..."
           />
         </form>
@@ -78,7 +82,10 @@
     <footer>
       <p>
         Made with ♥ by
-        <a target="_blank" href="https://www.instagram.com/fabcodingzest/"
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://www.instagram.com/fabcodingzest/"
           >Fab</a
         >
       </p>
