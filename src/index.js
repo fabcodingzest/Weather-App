@@ -22,7 +22,7 @@ const iconData = {
   '50d': { icon: '<i class="fas fa-smog"></i>' },
   '50n': { icon: '<i class="fas fa-smog"></i>'},
 }
-const api_key = '77c1241e696dc93b5dc96cdb45b3d3c3';
+const api_key = process.env.API_KEY;
 const api = {
   key: api_key,
   baseUrl: "https:/api.openweathermap.org/data/2.5/"
