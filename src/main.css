@@ -6,6 +6,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 10/16*100 i.e. 10px is default size */
+  height: 100%;
+
 }
 :root {
   --background: #0e0d45;
@@ -21,6 +23,9 @@ body {
   font-family: 'Roboto', sans-serif;
   transition: background 0.2s linear;
   color: var(--text);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h2 {
@@ -28,7 +33,7 @@ h2 {
 }
 header {
   background: var(--text);
-  height: 8%;
+  height: 8vh;
   display: flex;
   align-items: center;
 }
@@ -91,7 +96,7 @@ header {
   --text: #0e0d45;
 }
 main {
-  height: 86%;
+  height: 86vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +244,7 @@ footer {
   align-items: center;
   background-color: #fff;
   font-size: 1.5rem;
-  height: 6%;
+  height: 6vh;
   color: #6e6aae;
 }
 footer a {
