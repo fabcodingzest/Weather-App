@@ -36,12 +36,14 @@ function CheckError (response) {
     throw Error(response.statusText);
   }
 }
-function getSearchResults (query) {
+async function getSearchResults (query) {
   const loading = `<div class="box">
                       <div class="loader"></div>
                     </div>`
   searchedRes.innerHTML = loading;
-  fetch(`${process.env.PROXY}${api.baseUrl}weather?q=${query}&units=metric&appid=${api.key}`).then(CheckError).then(displayResults).catch(error =>console.log(error));
+  let response = await fetch(`${process.env.PROXY}${api.baseUrl}weather?q=${query}&units=metric&appid=${api.key}`)
+  let data = await CheckError(response)
+  return data;
 }
 function datebuilder (d) {
   const months = ['January','February','March','April','May','June','July','August','September','October','November','December'
@@ -83,7 +85,7 @@ function search (e) {
   if (e.keyCode === 13)
   {
     e.preventDefault();
-    getSearchResults(searchInput.value);
+    getSearchResults(searchInput.value).then(displayResults).catch(error=>console.log(error));
     searchInput.value = '';
     searchInput.blur();
     console.log(searchInput.value);
