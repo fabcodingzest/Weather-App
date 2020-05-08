@@ -41,7 +41,7 @@ function getSearchResults (query) {
                       <div class="loader"></div>
                     </div>`
   searchedRes.innerHTML = loading;
-  fetch(`${api.baseUrl}weather?q=${query}&units=metric&appid=${api.key}`).then(CheckError).then(displayResults).catch(error =>console.log(error));
+  fetch(`${process.env.PROXY}${api.baseUrl}weather?q=${query}&units=metric&appid=${api.key}`).then(CheckError).then(displayResults).catch(error =>console.log(error));
 }
 function datebuilder (d) {
   const months = ['January','February','March','April','May','June','July','August','September','October','November','December'
