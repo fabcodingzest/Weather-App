@@ -1,5 +1,5 @@
 import './main.css';
-const chk = document.getElementById('chk');
+const chk = document.querySelector('.label');
 const searchInput = document.querySelector('.search__query--input');
 const searchedRes = document.querySelector('.searched__response');
 const iconData = {
@@ -93,7 +93,8 @@ function search (e) {
 }
 
 
-chk.addEventListener('change', () => {
+chk.addEventListener('click', () => {
+  console.log(document.querySelector('.ball').classList.toggle('toggle'))
   document.body.classList.toggle('light-theme');
 });
 searchInput.addEventListener('keypress', search);

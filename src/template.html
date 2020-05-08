@@ -32,12 +32,11 @@
           </h1>
         </div>
         <div>
-          <input type="checkbox" class="checkbox" id="chk" name="chk" />
-          <label class="label" for="chk">
+          <div class="label" aria-label="dark-light-mode toggle">
             <i class="fas fa-sun switch-sun"></i>
             <i class="fas fa-moon"></i>
             <div class="ball"></div>
-          </label>
+          </div>
         </div>
       </div>
     </header>
@@ -45,7 +44,9 @@
       <section class="search__query">
         <form name="search">
           <i class="fas fa-search-location"></i>
-          <label for="search__input--box"></label>
+          <label for="search__input--box"
+            >Search for a city and hit enter</label
+          >
           <input
             class="search__query--input"
             type="text"
