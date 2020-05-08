@@ -85,6 +85,7 @@ function search (e) {
     e.preventDefault();
     getSearchResults(searchInput.value);
     searchInput.value = '';
+    searchInput.blur();
     console.log(searchInput.value);
   }
 }
