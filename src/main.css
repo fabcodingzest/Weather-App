@@ -28,7 +28,7 @@ h2 {
 }
 header {
   background: var(--text);
-  height: 8vh;
+  height: 8%;
   display: flex;
   align-items: center;
 }
@@ -91,7 +91,7 @@ header {
   --text: #0e0d45;
 }
 main {
-  height: 86vh;
+  height: 86%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +239,7 @@ footer {
   align-items: center;
   background-color: #fff;
   font-size: 1.5rem;
-  height: 6vh;
+  height: 6%;
   color: #6e6aae;
 }
 footer a {
