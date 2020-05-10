@@ -1,3 +1,4 @@
+/* Global reset */
 *,
 *:before,
 *:after {
@@ -49,11 +50,7 @@ header {
   padding: 1rem;
   font-size: larger;
 }
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
+/* Dark-light mode toggle */
 .label {
   background-color: var(--background);
   border-radius: 5rem;
@@ -95,6 +92,8 @@ header {
   --background: #acaaf5;
   --text: #0e0d45;
 }
+
+/* main content */
 main {
   height: 86vh;
   min-height: 500px;
@@ -102,6 +101,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
+/* Search form */
 form {
   width: 80%;
   display: flex;
@@ -139,7 +139,7 @@ label[for='search__input--box'] {
   outline: none;
   font-size: 1.4rem;
 }
-
+/* searched response data */
 .searched__response {
   display: flex;
   justify-content: center;
@@ -151,10 +151,12 @@ label[for='search__input--box'] {
   border-radius: 2rem;
   width: 80%;
 }
+/* Message to display before search */
 .default {
   font-size: 3rem;
   text-align: center;
 }
+/* Loader styles */
 .box {
   width: 200px;
   height: 200px;
@@ -218,6 +220,7 @@ label[for='search__input--box'] {
   margin-right: 1rem;
   align-self: center;
 }
+/* weather data */
 .searched__response--location {
   font-size: 2rem;
   display: flex;
